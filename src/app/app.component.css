@@ -1,0 +1,11 @@
+#misnotas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    text-align: center;
+}

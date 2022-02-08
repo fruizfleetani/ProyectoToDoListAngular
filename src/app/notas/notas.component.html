@@ -1,0 +1,50 @@
+
+<div>
+    <div id="notas" *ngFor="let tarea of listatareas.tareas;let i=index">
+  <ul>
+    <li
+      id="nombre"
+      [ngClass]="{'completada': tarea.hecho }"
+      (click)="listatareas.completar(i)"
+    >
+      {{ tarea.nombre }}
+    </li>
+    <li
+      [ngClass]="{completada: tarea.hecho }"
+      (click)="listatareas.completar(i)"
+    >
+      Prioridad: {{ tarea.prioridad }}
+    </li>
+    <li
+      [ngClass]="{'completada': tarea.hecho }"
+      (click)="listatareas.completar(i)"
+    >
+      {{ tarea.fecha }}
+    </li>
+    <!-- <li [ngClass]="{'completada': tarea.hecho }"
+    (click)="listatareas.completar(i)"> 
+
+    Creada hace: {{calculaDiferencia(i)}} minutos
+    </li> -->
+
+    <div>
+        <button (click)="listatareas.borrar(i)">Borrar</button>
+        <button (click)="listatareas.aumentarPrioridad(i)">Aumentar Prioridad</button>
+        <button (click)="listatareas.disminuirPrioridad(i)">Bajar Prioridad</button>
+      </div>
+      <hr />
+    </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <p>
+      Tienes {{ listatareas.tareas.length }} tareas y {{ listatareas.finalizadas() }} sin completar.
+    </p>
+    <br />
+    <button (click)="listatareas.borrarTodas()">Borrar todas las tareas</button>
+    <button (click)="listatareas.borrarCompletadas()">Borrar tareas completadas</button>
+    <button (click)="listatareas.mostrarCompletadas()">Mostrar tareas completadas</button>
+    <button (click)="listatareas.mostrarNoCompletadas()">Mostrar tareas sin completar</button>
+    <button (click)="listatareas.mostrarTodas()">Mostrar toda las tareas</button>
+  </div>
+

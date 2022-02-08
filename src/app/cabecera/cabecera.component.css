@@ -1,0 +1,33 @@
+#cabecera {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/monte.jpg");
+    margin-top: 0;
+    height: 15rem;
+    border-radius: 20px;
+}
+
+#cabecera input {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#cabecera select {
+    margin-left: 47%;
+    margin-right: 47%;
+}
+
+#cabecera button {
+    width: 7rem;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#cabecera label{
+    background-color: aqua;
+    border-radius: 10px;
+    margin-left: 46%;
+    margin-right: 46%;
+    color: black;
+    width: 70px;
+}

@@ -1,0 +1,22 @@
+<div id="cabecera">
+    <h1>TO DO LIST</h1>
+
+    <!-- INTENTO DE PONER BUSCADOR -->
+    <!-- <input type="text" [(ngModel)]="busqueda" (keyup.enter)="buscar()" name="busqueda" />
+    <button [disabled]="busqueda == ''" (click)="buscar()">
+        Buscar
+    </button> <br> -->
+
+    <input type="text" [(ngModel)]="nombre" (keyup.enter)="agregarTarea()" name="tarea" placeholder="Nueva tarea"/>
+    <br>
+    <label for="prioridad">Prioridad: </label><br>
+    <select (keyup.enter)="agregarTarea()" [(ngModel)]="prioridad" name="prioridad" id="prioridad">
+        <option> 1 <!--Alta--></option>
+        <option> 2 <!--Media--></option>
+        <option> 3 <!--Baja--></option>
+    </select>
+
+    <button [disabled]="prioridad == '' || nombre == ''" (click)="agregarTarea()">
+        Añadir tarea
+    </button>
+</div>

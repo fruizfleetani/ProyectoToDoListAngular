@@ -1,0 +1,78 @@
+#nombre {
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+
+
+#notas { 
+    border-radius: 20px;
+    border-style: solid; 
+    border-color: black; 
+}
+
+
+#notas ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    background-color: #ffffff;
+}
+
+#notas li {
+    list-style: none;
+}
+
+.completada {
+    margin: auto;
+    color: rgb(26, 224, 86);
+    text-decoration: line-through;
+}
+
+.normal {
+    margin: auto;
+    background: rgb(255, 255, 255);
+}
+
+button {
+    margin: 1rem;
+    width: 7rem;
+    align-self: center;
+}
+
+#footer {
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid; 
+    border-color: black;
+}
+
+#footer > p {
+    margin-left: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+#footer button {
+    margin-left: 5rem;
+}
+
+/* INTENTO DE ANIMACIONES */
+/* 
+.animacion-enter-active{
+    transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.animacion-leave-from,
+.animacion-enter-to{
+    transform: rotateX(-20px);
+    opacity: 60%;
+}
+.animacion-leave-active {
+    transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+  
+.animacion-enter-from,
+.animacion-leave-to {
+    transform: translateX(20px);
+    opacity: 10%;
+} */
